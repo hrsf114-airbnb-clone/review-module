@@ -1,7 +1,7 @@
 {
-  "name": "full-stack-demo",
+  "name": "review-module",
   "version": "1.0.0",
-  "description": "A mini application to walkthrough how a fullstack applicaiton is built",
+  "description": "A review module for a hospitality site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,14 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chinkevin25/full-stack-demo.git"
+    "url": "git+https://github.com/hrsf114-airbnb-clone/review-module.git"
   },
-  "author": "Kevin Chin",
+  "author": "John J. Nichols",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chinkevin25/full-stack-demo/issues"
-  },
-  "homepage": "https://github.com/chinkevin25/full-stack-demo#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
