@@ -4,7 +4,7 @@
   "description": "A review module for a hospitality site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "server-dev": "nodemon server/server.js",
     "server": "node server/server.js",
     "react-dev": "webpack -d -w"
@@ -12,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hrsf114-airbnb-clone/review-module.git"
+  },
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   },
   "author": "John J. Nichols",
   "license": "ISC",
@@ -28,7 +31,12 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.5.0",
     "babel-loader": "^8.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^24.5.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   }
