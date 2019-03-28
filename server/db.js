@@ -5,7 +5,7 @@ const db = mongoose.connection;
 
 // create database URL. We don't need to first create the fullstack-demo
 // database. Mongo will automatically create the database for us.
-const dbURL = 'mongodb://localhost/fullstack-demo';
+const dbURL = 'mongodb://localhost/review-module';
 
 // Connect!
 mongoose.connect(dbURL, { useNewUrlParser: true });
