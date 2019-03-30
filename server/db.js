@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const faker = require('faker');
 
-const db = mongoose.connection;
+// const db = mongoose.connection;
 
 // create database URL. We don't need to first create the fullstack-demo
 // database. Mongo will automatically create the database for us.
@@ -11,20 +11,24 @@ const dbURL = 'mongodb://localhost/review-module';
 
 // Connect!
 mongoose.connect(dbURL, { useNewUrlParser: true });
+const db = mongoose.connection;
 
 let reviewSchema = new mongoose.Schema({
     author: String,
-    profile: URL,
+    profile: String,
     createdAt: Date,
     body: String
 });
 
 let Review = mongoose.model('Review', reviewSchema);
 
+console.log(`
+  A random city:................${ faker.address.city() }
+`);
+
 for (let i = 0; i < 101; i++) {
     let reviewObj = {
         author: faker.name.firstName(),
-        profile: faker.avatar.image_url(),
         createdAt: faker.date.month() + ' ' + faker.random.number({
             'min': 2012,
             'max': 2019
