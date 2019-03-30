@@ -36,6 +36,7 @@
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.5.0",
     "jest-cli": "^24.5.0",
+    "mongoose": "^5.4.20",
     "react-test-renderer": "^16.8.5",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
