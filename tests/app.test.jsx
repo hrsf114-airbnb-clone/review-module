@@ -5,5 +5,5 @@ import App from '../client/src/components/App';
 it('works', () => {
   const wrap = shallow(<App />);
 
-  expect(wrap.text()).toEqual('hello world');
+  expect(wrap.text()).toEqual('Reviews');
 });
